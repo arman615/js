@@ -1,3 +1,113 @@
+const array = [1, 2, 3, 4, 5];
+const reversed = reverse(array);
+console.log(reversed);
+
+
+const array = [1, 2, 3, 4, 5];
+console.log(array.join()); 
+
+const array = [1, 2, 3, NaN, 5];
+console.log(array.includes(3)); 
+
+const array = [1, 2, 3, 4, 5];
+const foundIndex = array.findIndex((element) => element > 2);
+console.log(foundIndex);
+
+
+const array16 = [1, 2, 3, 4, 5];
+const foundIndex = array16.findIndex((element) => element > 2);
+console.log(foundIndex); 
+
+
+const array15 = [1, 2, 3, 4, 5];
+const found = array15.find((element) => element > 2);
+console.log(found); 
+
+
+const array14 = [1, 2, 3, 4, 5];
+array.fill(0, 1, 4);
+console.log(array14);
+
+
+const array13 = ['a', 'b', 'c'];
+const iterator = entries(array13);
+
+let result = iterator.next();
+while (!result.done) {
+  console.log(result.value); 
+  result = iterator.next();
+}
+
+
+
+const array12 = [3, 1, 2, 5, 4];
+const sorted = sort(array);
+console.log(sorted); 
+
+const array11 = [1, 2, 3, 4, 5];
+const hasEvenNumber = some(array, (element) => element % 2 === 0);
+console.log(hasEvenNumber); 
+
+
+const array10 = [1, 2, 3, 4, 5];
+const sliced = slice(array10, 1, 4);
+console.log(sliced); 
+
+
+const array9 = [1, 2, 3, 4, 5];
+const sum = reduce(array9, (accumulator, element) => accumulator + element, 0);
+console.log(sum); 
+
+
+const array8 = [1, 2, 3, 4, 5];
+const squared = map(array8, (element) => element * element);
+console.log(squared); 
+
+
+const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+console.log(animals.lastIndexOf('Dodo'));
+
+
+
+
+const array7 = [0, 1, 2, 3, 4, 5, 6];
+console.log(indexOf(array7,4) );
+
+
+const array6 = [1, 2, 3, 4, 5, 6];
+forEach(array6,(element) => {
+    console.log(element);
+    
+})
+
+
+const array5 = [1, [2, 3], [4, [5, 6]]];
+const flattenedArray = flat(array5);
+console.log(flattenedArray); 
+
+
+
+const array4 = [1, 2, 3, 4, 5, 6, 7];
+const oddNumbers = filter(array4, (element) => element % 2 != 0);
+console.log(oddNumbers); 
+
+
+
+
+const array3 = [1, 2, 3, 4, 5];
+const allGreaterThanZero = every(array3, (element) => element > 0);
+console.log(allGreaterThanZero);
+
+
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const result = concat(array1, array2);
+console.log(result); 
+
+
+
+
 /*1*/
 function concat(arr1, arr2) {
   const concatenated = [];
@@ -269,113 +379,3 @@ function reverse(arr) {
   
   return arr;
 }
-
-
-
-
-const array = [1, 2, 3, 4, 5];
-const reversed = reverse(array);
-console.log(reversed);
-
-
-const array = [1, 2, 3, 4, 5];
-console.log(array.join()); 
-
-const array = [1, 2, 3, NaN, 5];
-console.log(array.includes(3)); 
-
-const array = [1, 2, 3, 4, 5];
-const foundIndex = array.findIndex((element) => element > 2);
-console.log(foundIndex);
-
-
-const array16 = [1, 2, 3, 4, 5];
-const foundIndex = array16.findIndex((element) => element > 2);
-console.log(foundIndex); 
-
-
-const array15 = [1, 2, 3, 4, 5];
-const found = array15.find((element) => element > 2);
-console.log(found); 
-
-
-const array14 = [1, 2, 3, 4, 5];
-array.fill(0, 1, 4);
-console.log(array14);
-
-
-const array13 = ['a', 'b', 'c'];
-const iterator = entries(array13);
-
-let result = iterator.next();
-while (!result.done) {
-  console.log(result.value); 
-  result = iterator.next();
-}
-
-
-
-const array12 = [3, 1, 2, 5, 4];
-const sorted = sort(array);
-console.log(sorted); 
-
-const array11 = [1, 2, 3, 4, 5];
-const hasEvenNumber = some(array, (element) => element % 2 === 0);
-console.log(hasEvenNumber); 
-
-
-const array10 = [1, 2, 3, 4, 5];
-const sliced = slice(array10, 1, 4);
-console.log(sliced); 
-
-
-const array9 = [1, 2, 3, 4, 5];
-const sum = reduce(array9, (accumulator, element) => accumulator + element, 0);
-console.log(sum); 
-
-
-const array8 = [1, 2, 3, 4, 5];
-const squared = map(array8, (element) => element * element);
-console.log(squared); 
-
-
-const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
-console.log(animals.lastIndexOf('Dodo'));
-
-
-
-
-const array7 = [0, 1, 2, 3, 4, 5, 6];
-console.log(indexOf(array7,4) );
-
-
-const array6 = [1, 2, 3, 4, 5, 6];
-forEach(array6,(element) => {
-    console.log(element);
-    
-})
-
-
-const array5 = [1, [2, 3], [4, [5, 6]]];
-const flattenedArray = flat(array5);
-console.log(flattenedArray); 
-
-
-
-const array4 = [1, 2, 3, 4, 5, 6, 7];
-const oddNumbers = filter(array4, (element) => element % 2 != 0);
-console.log(oddNumbers); 
-
-
-
-
-const array3 = [1, 2, 3, 4, 5];
-const allGreaterThanZero = every(array3, (element) => element > 0);
-console.log(allGreaterThanZero);
-
-
-
-const array1 = [1, 2, 3];
-const array2 = [4, 5, 6];
-const result = concat(array1, array2);
-console.log(result); 
